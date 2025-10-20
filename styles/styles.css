@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 50px 428px 332px 240px 50px;
+  grid-template-areas: '. menu logo_header contacts .';
+  height: 293px;
+  align-items: center;
+  background-color: cyan;
+}
+
+.menu {
+  margin-bottom: 5px; /*  margin: 133px XXX 138px 50px;*/
+  grid-area: menu;
+  font: normal 400 18px/100% "Raleway", sans-serif;
+  letter-spacing: 0%;
+}
+
+.nav_link {
+  display: inline;
+  list-style: disc inside; /* не работает ??? */
+}
+
+.logo_header {
+  display: block;
+  grid-area: logo_header;
+  top: 92px;
+  left: 478px;
+/*  border: 6px solid #000000; ребус нужно решать*/
+  margin-bottom: 4px; /* margin: 92px 474px 96x 478px;*/
+}
+
+.contacts {
+  display: block;
+  grid-area: contacts;
+  font: normal 400 18px/24.3px "Raleway", sans-serif;
+  margin-bottom: 5px;
+  letter-spacing: 0%;
+}
+
+.contact {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.cover {
+  display: block;
+  height: 757px;
+  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+/*  background-image: url("../images/lotus.jpg");*/
+  text-transform: uppercase;
+}
+
+.title {
+  display: grid;
+  padding: 165px 50px 0;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+
+.you_need_it {
+/*  display: block;*/
+  font: normal 700 100px/115px "Raleway", sans-serif;
+  word-spacing: 6.15px;
+}
+
+.text_left {
+  justify-self: start;
+}
+
+.text_center {
+  justify-self: center;
+}
+.text_right {
+  justify-self: end;
+}
+
+.description {
+  display: flex;
+  font: normal 400 22px/28px "Raleway", sans-serif;
+  letter-spacing: 0;
+  padding: 106px 50px 50px 50px;
+  justify-content: space-between;
+  align-items: center;
+  word-spacing: 23.362px;
+}
+
+.make_bet {
+/*  display: block;*/
+  width: 256px;
+  height: 51px;
+  background-color: transparent;
+  border: 1px solid white;
+  font: normal 500 22px/100% "Raleway", sans-serif;
+  letter-spacing: 0%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lots {
+  width: 1052px;
+  height: 723px;
+  margin: 180px auto 0;
+  background-color: rgba(127, 127, 127, 0.1);
+}
+
+.title_lots {
+  display: block;
+  width: 121;
+  height: 47;
+  font: normal 700 40px/47px "Raleway", sans-serif;
+  color: black;
+  padding-left: 40px;
+  padding-bottom: 27px;
+  text-transform: uppercase;
+}
+
+.list_of_lots {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.lot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  position: relative;
+  width: 334px;
+  height: 596px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.photo {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.name_lot {
+  font: normal 700 22px/120% "Raleway", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.description_lot {
+  font: normal 400 20px/120% "Raleway", sans-serif;
+  color: white;
+}
+
+.more_position {
+  display: block;
+  padding: 30px 0 0 40px;
+}
+
+.more {
+/* font: [style] [variant] [weight] [size][/line-height] [family] */
+  font: normal 400 20px/100% "Raleway", sans-serif;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.about {
+  width: 1052px;
+  height: 595px;
+  margin: 180px auto 180px;
+  padding: 35px 0 0 47px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo_about {
+  display: block;
+  top: 35px;
+  left: 47px;
+  width: 240px;
+  height: 240px;
+/*  border: 6px solid #000000; ребус нужно решать*/
+  margin-bottom: 4px; /* margin: 92px 474px 96x 478px;*/
+}
+/* Об аукционе
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase; */
+
+/* Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%;*/
+
+/* Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%; */
+
+
+.footer {
+  width: 1100px;
+  height: 180px;
+  margin: 0 auto;
+/*  top: 2848px; */
+  background-color: pink;
+}
+ 
