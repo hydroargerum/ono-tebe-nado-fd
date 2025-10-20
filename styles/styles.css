@@ -1,27 +1,12 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.body {
-  margin: 0 auto;
-  width: 1100px;
-}
-
 .header {
-  display: grid;
-  grid-template-columns: 50px 428px 332px 240px 50px;
-  grid-template-areas: '. menu logo_header contacts .';
+  display: flex;
+  padding: 0 50px 5px;
   height: 293px;
   align-items: center;
+  justify-content: space-between;
   background-color: cyan;
-}
-
-.menu {
-  margin-bottom: 5px; /*  margin: 133px XXX 138px 50px;*/
-  grid-area: menu;
-  font: normal 400 18px/100% "Raleway", sans-serif;
-  letter-spacing: 0%;
+  font-size: 18px;
+  position: relative;
 }
 
 .nav_link {
@@ -30,31 +15,28 @@
 }
 
 .logo_header {
-  display: block;
-  grid-area: logo_header;
+  position: absolute;
+/*  object-fit: cover;*/
   top: 92px;
   left: 478px;
 /*  border: 6px solid #000000; ребус нужно решать*/
-  margin-bottom: 4px; /* margin: 92px 474px 96x 478px;*/
+/*  margin-bottom: 4px; /* margin: 92px 474px 96x 478px;*/
 }
 
 .contacts {
-  display: block;
-  grid-area: contacts;
-  font: normal 400 18px/24.3px "Raleway", sans-serif;
-  margin-bottom: 5px;
-  letter-spacing: 0%;
+  font: inherit;
+  line-height: 24.3px;
+  width: 240px;
 }
 
 .contact {
-  color: black;
   text-decoration: none;
   border-bottom: 1px solid black;
 }
 
 .cover {
-  display: block;
   height: 757px;
+  padding: 165px 50px 50px;
   color: white;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
@@ -64,7 +46,6 @@
 
 .title {
   display: grid;
-  padding: 165px 50px 0;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 20px;
 }
@@ -88,12 +69,11 @@
 
 .description {
   display: flex;
-  font: normal 400 22px/28px "Raleway", sans-serif;
-  letter-spacing: 0;
-  padding: 106px 50px 50px 50px;
+  font-size: 22px;
+  line-height: 28px;
   justify-content: space-between;
   align-items: center;
-  word-spacing: 23.362px;
+  word-spacing: 18.535px;
 }
 
 .make_bet {
