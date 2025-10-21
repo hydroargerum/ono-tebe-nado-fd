@@ -1,94 +1,121 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+/*  display: flex;
+  justify-content: space-between;
+  position: relative;
+*/
   padding: 0 50px 5px;
   height: 293px;
   align-items: center;
-  justify-content: space-between;
   background-color: cyan;
   font-size: 18px;
-  position: relative;
 }
 
-.nav_link {
-  display: inline;
-  list-style: disc inside; /* не работает ??? */
+.header__links-list {
+  display: flex;
+  gap: 20px; /* need correct */
+  list-style: circle;
 }
 
-.logo_header {
+.header__logo {
+  display: block;
+/*  object-fit: cover;
   position: absolute;
-/*  object-fit: cover;*/
   top: 92px;
-  left: 478px;
-/*  border: 6px solid #000000; ребус нужно решать*/
-/*  margin-bottom: 4px; /* margin: 92px 474px 96x 478px;*/
+  left: 478px;*/
 }
 
-.contacts {
-  font: inherit;
-  line-height: 24.3px;
-  width: 240px;
+.header__address{
+
 }
 
-.contact {
+.address { /* divide classes */
+  max-width: 240px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font: inherit; /* working */
+  line-height: 24.3px; /* working */
+}
+
+.address-item {
   text-decoration: none;
   border-bottom: 1px solid black;
 }
 
+/*-----section-----*/
 .cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 757px;
   padding: 165px 50px 50px;
   color: white;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.6);
-/*  background-image: url("../images/lotus.jpg");*/
   text-transform: uppercase;
 }
 
-.title {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 20px;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.you_need_it {
-/*  display: block;*/
-  font: normal 700 100px/115px "Raleway", sans-serif;
-  word-spacing: 6.15px;
+.cover__title {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15em;
 }
 
-.text_left {
+.aligned-text {
+  display: block;
+  padding-bottom: 20px;
+}
+.aligned-text_left {
   justify-self: start;
 }
 
-.text_center {
+.aligned-text_center {
   justify-self: center;
 }
-.text_right {
+
+.aligned-text_right {
   justify-self: end;
 }
 
-.description {
-  display: flex;
-  font-size: 22px;
-  line-height: 28px;
-  justify-content: space-between;
-  align-items: center;
-  word-spacing: 18.535px;
+.letter-spacing-extended{
+  letter-spacing: 0.3em;
 }
 
-.make_bet {
-/*  display: block;*/
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  font-size: 22px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  line-height: 28px;
+  word-spacing: 18.535px; /* need correct */
+}
+
+.bet-button {
   width: 256px;
   height: 51px;
   background-color: transparent;
   border: 1px solid white;
-  font: normal 500 22px/100% "Raleway", sans-serif;
-  letter-spacing: 0%;
+  font-weight: 500;
   color: white;
   text-align: center;
   text-transform: uppercase;
 }
 
+/*-----section-----*/
 .lots {
   width: 1052px;
   height: 723px;
@@ -96,24 +123,26 @@
   background-color: rgba(127, 127, 127, 0.1);
 }
 
-.title_lots {
+.lots__heading {
   display: block;
   width: 121;
   height: 47;
-  font: normal 700 40px/47px "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
   color: black;
   padding-left: 40px;
   padding-bottom: 27px;
   text-transform: uppercase;
 }
 
-.list_of_lots {
+.lots__card-list {
   display: flex;
   padding: 0;
   justify-content: space-between;
 }
 
-.lot {
+.lots__card-list-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,6 +154,10 @@
 }
 
 .photo {
+  background-size: cover;
+  background-position: center;
+
+
   position: absolute;
   z-index: -1;
   object-fit: cover;
@@ -132,19 +165,25 @@
   left: 0;
 }
 
-.name_lot {
+.card_type_film
+.card_type_book
+.card_type_picture
+
+.card-link {
+  height: 100%;
+
   font: normal 700 22px/120% "Raleway", sans-serif;
   color: white;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
-.description_lot {
+.card {
   font: normal 400 20px/120% "Raleway", sans-serif;
   color: white;
 }
 
-.more_position {
+.lots__look-more-link {
   display: block;
   padding: 30px 0 0 40px;
 }
