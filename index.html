@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./fonts/fonts.css" rel="stylesheet">
-    <link href="./styles/global.css" rel="stylesheet">
-    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="./fonts/fonts.css" rel="stylesheet" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link href="./styles/global_my.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
   </head>
 
   <body class="body">
@@ -14,20 +15,22 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a class="header__link_active" href="#0">главная</a>
+            <a class="header__link_active underline" href="#0">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link" href="#1">посмотреть лоты</a>
+            <a class="header__link underline" href="#1">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link" href="#2">об аукционе</a>
+            <a class="header__link underline" href="#2">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a class="header__logo"><img class="header__logo-image" src="./images/logo-black.svg"/></a>
+      <a class="header__logo"
+        ><img class="header__logo-image" src="./images/logo-black.svg"
+      /></a>
       <address class="address">
-        <a class="address-item" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="address-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a class="underline" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
     </header>
@@ -35,15 +38,26 @@
     <main>
       <section class="cover overlay">
         <h1 class="cover__title">
-          <span class="aligned-text aligned-text_left"><span class="letter-spacing-extended">оН</span><span class="no-letter-spacing">О</span></span>
-          <span class="aligned-text aligned-text_center"><span class="letter-spacing-extended">ТЕБ</span><span class="no-letter-spacing">Е</span></span>
-          <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">НАД</span><span class="no-letter-spacing">О</span></span>
+          <span class="aligned-text aligned-text_left">
+            <span class="letter-spacing-extended">оН</span
+            ><span class="no-letter-spacing">О</span>
+          </span>
+          <span class="aligned-text aligned-text_center">
+            <span class="letter-spacing-extended">ТЕБ</span
+            ><span class="no-letter-spacing">Е</span>
+          </span>
+          <span class="aligned-text aligned-text_right">
+            <span class="letter-spacing-extended">НАД</span
+            ><span class="no-letter-spacing">О</span>
+          </span>
         </h1>
         <div class="cover__description">
-          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
           <button class="bet-button">Сделать ставку</button>
         </div>
-        <img src="./images/cover.jpg" class="photo" width="100%" height="100%"/>
+        <img src="./images/cover.jpg" class="bacground_image" />
       </section>
 
       <section class="lots">
@@ -51,58 +65,72 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
-                Фильм режиссёра, который бросил киношколу
-
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              <article class="card overlay">
+                <p class="card_text_up underline">
+                  Фильм режиссёра, который бросил киношколу
+                </p>
+                <p class="card_text_down">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
               </article>
             </a>
-            <img src="./images/card-lot-01.jpg" class="photo" width="100%" height="100%"/>
+            <img src="./images/card-lot-01.jpg" class="bacground_image" />
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
-                Книга, где описан один скучный день из жизни рекламного агента
-
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно рассказывается
-                о 16 июня 1904 года и об истории литературы, начиная с античных
-                времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-                бы вы поставили на «Улисса» Джеймса Джойса?
+              <article class="card overlay">
+                <p class="card_text_up underline">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </p>
+                <p class="card_text_down">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
               </article>
             </a>
-            <img src="./images/card-lot-02.jpg" class="photo" width="100%" height="100%"/>
+            <img src="./images/card-lot-02.jpg" class="bacground_image" />
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-                похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-                Сколько бы вы на такое поставили, если бы не знали, что это — одна
-                из революционных работ Кандинского?
+              <article class="card overlay">
+                <p class="card_text_up underline">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </p>
+                <p class="card_text_down">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
               </article>
             </a>
-            <img src="./images/card-lot-03.jpg" class="photo" width="100%" height="100%"/>
+            <img src="./images/card-lot-03.jpg" class="bacground_image" />
           </li>
         </ul>
-        <div class="lots__look-more-link"><a class="more">посмотреть больше</a></div>
+        <a class="lots__look-more-link underline">посмотреть больше</a>
       </section>
 
       <section class="about">
-        <img src="./images/logo-black.svg" />
-        <div>
-          <h2>Об аукционе</h2>
-          <p>
+        <div class="about__logo">
+          <img class="about__logo-image" src="./images/logo-white.svg" />
+        </div>
+        <div class="about__column">
+          <h2 class="about__title">Об аукционе</h2>
+          <p class="about__text">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
           </p>
-          <p>
+          <p class="about__text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -113,6 +141,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <address class="contacts">
         <div>+9 999 555 5555</div>
