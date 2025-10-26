@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ono-tebe-nado-fd</title>
+    <title>Оно тебе надо</title>
     <link href="./fonts/fonts.css" rel="stylesheet" />
     <link href="./styles/global.css" rel="stylesheet" />
     <link href="./styles/style.css" rel="stylesheet" />
@@ -14,7 +14,7 @@
       <nav>
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a class="header__link_active" href="#0">главная</a>
+            <a class="header__link header__link_active" href="#0">главная</a>
           </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#0">посмотреть лоты</a>
@@ -37,7 +37,7 @@
     <main>
       <section class="cover">
         <div class="overlay"></div>
-        <h1 class="cover__title">
+        <h1 class="cover__title above_overlay">
           <span class="aligned-text aligned-text_left">
             <span class="letter-spacing-extended">оН</span
             ><span class="no-letter-spacing">О</span>
@@ -51,15 +51,19 @@
             ><span class="no-letter-spacing">О</span>
           </span>
         </h1>
-        <div class="cover__description">
+        <div class="cover__description above_overlay">
           <p class="cover__description-text">
-            Аукцион<span class="ws_124rem"> </span>вещей,<span
-              class="ws_110rem"
+            Аукцион<span class="word_spacing_long"> </span>вещей,<span
+              class="word_spacing_short"
             >
             </span
-            >в<span class="ws_116rem"> </span>которые<span class="ws_110rem">
+            >в<span class="word_spacing_medium"> </span>которые<span
+              class="word_spacing_short"
+            >
             </span
-            >никто<span class="ws_124rem"> </span>не<span class="ws_110rem">
+            >никто<span class="word_spacing_long"> </span>не<span
+              class="word_spacing_short"
+            >
             </span
             >верил
           </p>
@@ -72,11 +76,12 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item card_type_film">
             <a class="card-link" href="#0">
-              <article class="card overlay">
-                <p class="card_text_up">
+              <article class="card">
+                <div class="overlay"></div>
+                <h3 class="card_title above_overlay">
                   Фильм режиссёра, который бросил киношколу
-                </p>
-                <p class="card_text_down">
+                </h3>
+                <p class="card_text above_overlay">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр
                   <span class="long_dash">&mdash;</span> Пол Томас Андерсон?
@@ -86,11 +91,12 @@
           </li>
           <li class="lots__card-list-item card_type_book">
             <a class="card-link" href="#0">
-              <article class="card overlay">
-                <p class="card_text_up">
+              <article class="card">
+                <div class="overlay"></div>
+                <h3 class="card_title above_overlay">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </p>
-                <p class="card_text_down">
+                </h3>
+                <p class="card_text above_overlay">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -103,11 +109,12 @@
           </li>
           <li class="lots__card-list-item card_type_picture">
             <a class="card-link" href="#0">
-              <article class="card overlay">
-                <p class="card_text_up">
+              <article class="card">
+                <div class="overlay"></div>
+                <h3 class="card_title above_overlay">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </p>
-                <p class="card_text_down">
+                </h3>
+                <p class="card_text above_overlay">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
